@@ -17,11 +17,11 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  var log = `Maintenance Middleware Invoked `;
-  fs.appendFile('server.log', log + '\n');
-  res.render('maintenance.hbs');
-});
+//app.use((req, res, next) => {
+//  var log = `Maintenance Middleware Invoked `;
+//  fs.appendFile('server.log', log + '\n');
+//  res.render('maintenance.hbs');
+//});
 
 app.use(express.static(__dirname + '/public'));
 
